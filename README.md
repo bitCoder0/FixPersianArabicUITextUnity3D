@@ -15,7 +15,7 @@
 ## نحوه استفاده
 
 
-اول پکیج [PersianArabicTextUIFix.unitypackage](https://github.com/bitCoder0/FixPersianArabicUITextUnity3D/blob/master/PersianArabicTextUIFix.unitypackage)
+اول پکیج [PersianArabicTextUIFix.unitypackage](https://raw.githubusercontent.com/bitCoder0/FixPersianArabicUITextUnity3D/master/PersianArabicTextUIFix.unitypackage)
  رو وارد پروژتون کنید یا محتویات پوشه Assets رو که بالا هست داخل پروژه کپی کنید
 
 بعد اسکریپت PersianArabicFix.cs رو به گیم آجکتی که Canvas داره و تکستهاتون زیرمجوعه اونن اضافه کنید

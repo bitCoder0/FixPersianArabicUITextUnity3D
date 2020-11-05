@@ -13,6 +13,9 @@ using ArabicSupport;
 /// </summary>
 public class PersianArabicFix : MonoBehaviour
 {
+    public List<GameObject> ignoreList;
+
+    public bool checkDisabledTexts=true;
     void Start()
     {
         fix();
@@ -24,9 +27,10 @@ public class PersianArabicFix : MonoBehaviour
     /// </summary>
     void fix()
     {
-        foreach (Text text in gameObject.GetComponentsInChildren<Text>())
+        foreach (Text text in gameObject.GetComponentsInChildren<Text>(checkDisabledTexts))
         {
-            text.text = ArabicFixer.Fix(text.text);
+            if(!ignoreList.Contains(gameObject))
+                text.text = ArabicFixer.Fix(text.text);
 
         }
 
